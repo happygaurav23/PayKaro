@@ -12,7 +12,7 @@ export const Users = () => {
     const [filter, setFilter] = useState("");
 
     useEffect(() => {
-        axios.get("http://localhost:3000/api/v1/user/users?filter=" + filter)
+        axios.get("https://pay-karo-backend.vercel.app/api/v1/user/users?filter=" + filter)
             .then(response => {
                 setUsers(response.data.user)
             })

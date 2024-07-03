@@ -13,7 +13,7 @@ export const Dashboard = () => {
 
     async function fetchBalance(){
      try {
-        const response = await axios.get("http://localhost:3000/api/v1/account/balance" ,{
+        const response = await axios.get("https://pay-karo-backend.vercel.app/api/v1/account/balance" ,{
             headers:{
                 Authorization: "Bearer " + localStorage.getItem("token")
             }
