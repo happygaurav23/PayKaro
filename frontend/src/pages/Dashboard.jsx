@@ -34,7 +34,7 @@ export const Dashboard = () => {
 
     useEffect(()=>{
         fetchBalance();
-    },[])
+    },[userBalance])
     return <div>
         <Appbar value={userName} />
         <div className="m-8">
