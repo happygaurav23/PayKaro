@@ -51,7 +51,7 @@ router.post("/signup",async (req,res) => {
 
             const userId = newUser._id;
             const userFirstName = newUser.firstName;
-            console.log(userId);
+            //console.log(userId);
             await accountModel.create({
               userId,
               userFirstName,
@@ -128,7 +128,7 @@ router.post("/signin",async (req,res)=>{
         //password:req.body.password
     })
 
-    console.log(user);
+    //console.log(user);
 
     if(user){
         bcrypt.compare(password,user.password,(err,result)=>{

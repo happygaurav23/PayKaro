@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 
-mongoose.connect("your db connection string")
+mongoose.connect("mongodb+srv://happygaurav23:singh2310@paytm.wd0u9i5.mongodb.net/?retryWrites=true&w=majority&appName=Paytm")
 .then(()=>{
     console.log("DB Connection Successfull")
 })

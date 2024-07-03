@@ -45,7 +45,7 @@ router.post("/transfer",authMiddleware,async(req,res)=>{
             userId:receiver
         }).session(session);
 
-        console.log(receiver);
+        //console.log(receiver);
     
         if(!receiverAccount){
             await session.abortTransaction();
